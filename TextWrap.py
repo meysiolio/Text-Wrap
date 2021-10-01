@@ -4,10 +4,9 @@ def wrap(string, max_width):
     while (n+1) * max_width <= len(string):
         l.append(string[n*max_width:(n+1)*max_width])
         n += 1
-    l.append(string[n*max_width:])
-    
+        
+    l.append(string[n*max_width:])    
     string = '\n'.join(l)
-
     return string
 
 if __name__ == '__main__':
